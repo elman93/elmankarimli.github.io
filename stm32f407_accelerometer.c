@@ -1,3 +1,8 @@
+/* Created on Wed 08.11.2017
+   @author Elman Karimli */
+
+
+
 #include "stm32f4xx.h"	// 
 int main(){
 	// Standart Part
@@ -7,7 +12,7 @@ GPIO_InitTypeDef GPIOA_Params; // Declaring the structure handle for the paramet
 GPIO_InitTypeDef GPIOE_Params; // Declaring the structure handle for the parameters of GPIOE
 uint8_t data_to_send[1]; //Declaring an array to store the required LIS3DSH register address in. It has a single element since we will only be accessing a single address in each SPI transaction.
 uint16_t data_size=1; //Declaring a variable that specifies that only a single address is accessed in each transaction.
-uint32_t data_timeout=1000; //Setting a maximum time to wait for the SPI transaction to complete in - this mean that our program won’t freeze if there is a problem with the SPI communication channel.
+uint32_t data_timeout=1000; //Setting a maximum time to wait for the SPI transaction to complete in - this mean that our program wonâ€™t freeze if there is a problem with the SPI communication channel.
 uint8_t Who_am_I; //Declaring the variable to store the who_am_I register value in
 uint8_t CTRL_REG4;
 uint8_t Z_Reg_H; //Declaring the variable to store the z-axis MS 8-bits in
